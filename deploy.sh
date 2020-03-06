@@ -20,6 +20,6 @@ git add -A
 git commit --am -m "build: deploy documentation"
 git push -f git@github.com:charlzyx/typings.git master:gh-pages
 
-clean
+# clean
 cd -
 rm -rf $TEMP_PATH
