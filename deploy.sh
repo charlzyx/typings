@@ -6,6 +6,7 @@ TEMP_PATH="docs/.temp"
 # build docs
 npm run doc:build
 
+rm -rf $TEMP_PATH
 # prepare deploy
 mkdir $TEMP_PATH
 cd $TEMP_PATH
