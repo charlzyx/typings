@@ -3,4 +3,5 @@
 
 ## with Image Paste Uploading...
 
-![](https://gitee.com/charlzyx/picgo/raw/master/go/20200306162338.jpg)
+
+[<img src="https://gitee.com/charlzyx/picgo/raw/master/go/20200306162338.jpg" >](https://charlzyx.github.io/typings/)
