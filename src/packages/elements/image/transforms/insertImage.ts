@@ -4,7 +4,7 @@ import { IMAGE } from '../types';
 
 let remoteId = 1;
 
-export const insertImage = (editor: Editor, url: string | ArrayBuffer, remoteUrlReplacer?: Promise<string>) => {
+export const insertImage = (editor: Editor, url: string | ArrayBuffer, remoteUrlReplacer?:  Promise<string>) => {
   const text = { text: '' };
   let image = { type: IMAGE, url, children: [text], rid: 0, uploading: false };
   if (remoteUrlReplacer) {
@@ -23,6 +23,7 @@ export const insertImage = (editor: Editor, url: string | ArrayBuffer, remoteUrl
             return n.rid === uid;
           },
         })
+
       }
     }).catch((failedUrl) => {
       Transforms.setNodes(editor, {
@@ -32,6 +33,7 @@ export const insertImage = (editor: Editor, url: string | ArrayBuffer, remoteUrl
         split: true,
         match: n => n.rid === uid,
       })
+
     });
   }
 

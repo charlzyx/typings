@@ -1,6 +1,9 @@
 export default {
-  title: 'dumi',
+  title: 'typings',
   mode: 'site',
-  base: '/typings',
   publicPath:'./',
+  navs: [
+    null,
+    { title: 'GitHub', path: 'https://github.com/charlzyx/typings' },
+  ],
 }

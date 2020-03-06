@@ -17,7 +17,6 @@ export const ImageElement = ({
   attributes,
   children,
   element,
-  ...others
 }: RenderElementProps) => {
   const selected = useSelected();
   const focused = useFocused();
